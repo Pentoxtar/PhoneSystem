@@ -125,6 +125,7 @@ admin.menu = {
                 show(search_menu);
             }
         };
+        
 
         function menuItemSelect(up) {
             let shownItem = search_menu.querySelectorAll('li.shown');

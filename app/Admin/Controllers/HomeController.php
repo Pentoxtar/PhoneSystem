@@ -32,5 +32,13 @@ class HomeController extends Controller
                     $column->append(Dashboard::dependencies());
                 });
             });
+            $this->hook("alterGrid", function ($scope, $grid) {
+                $grid->model()->orderBy('release_year', 'desc');
+                $grid->model()->orderBy('model', 'asc');
+                $grid->model()->orderBy('manufacturer', 'asc');
+                return $grid;
+            });
+            
     }
+    
 }

@@ -31,11 +31,11 @@ class PhoneController extends AdminController
         $grid->column('Model', __('Model'));
         $grid->column('Manufacturer', __('Manufacturer'));
         $grid->column('YearRelease', __('YearRelease'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        
 
         return $grid;
     }
+    
 
     /**
      * Make a show builder.
@@ -52,8 +52,7 @@ class PhoneController extends AdminController
         $show->field('Model', __('Model'));
         $show->field('Manufacturer', __('Manufacturer'));
         $show->field('YearRelease', __('YearRelease'));
-        $show->field('created_at', __('Created at'));
-        $show->field('updated_at', __('Updated at'));
+       
 
         return $show;
     }
@@ -74,4 +73,5 @@ class PhoneController extends AdminController
 
         return $form;
     }
+    
 }
